@@ -724,11 +724,24 @@ export default function BasketballCourtTactics({
               </div>
 
               {(() => {
+<<<<<<< HEAD
                 if (Math.abs(lineupHeightDelta) < 0.5) return null;
                 const isSmallBall = lineupHeightDelta < 0;
                 return (
                   <div className="lineup-height-insight" style={{
                     borderRadius: '6px',
+=======
+                const heightDelta = Number(((courtStats.height || 0) - (originalCourtStats.height || 0)).toFixed(1));
+                if (Math.abs(heightDelta) < 0.5) return null;
+                const isSmallBall = heightDelta < 0;
+                return (
+                  <div style={{
+                    marginTop: '10px',
+                    padding: '6px 12px',
+                    borderRadius: '6px',
+                    fontSize: '0.74rem',
+                    lineHeight: 1.4,
+>>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
                     background: isSmallBall ? '#eff6ff' : '#f0fdf4',
                     border: `1px solid ${isSmallBall ? '#bfdbfe' : '#bbf7d0'}`,
                     color: isSmallBall ? '#1e40af' : '#166534',
@@ -739,14 +752,22 @@ export default function BasketballCourtTactics({
                     <Sparkles size={14} style={{ flexShrink: 0 }} />
                     <span>
                       <strong>{isSmallBall ? '⚡ 스몰볼 라인업 가속' : '🛡️ 빅 라인업 높이 보강'}:</strong>{' '}
+<<<<<<< HEAD
                       평균 신장이 <strong>{Math.abs(lineupHeightDelta)}cm</strong> {isSmallBall ? '감소하여 볼 전환 속도와 외곽 공간 창출이 유리해지나, 골밑 리바운드 박스아웃에 집중해야 합니다.' : '증가하여 림 프로텍션과 골밑 페인트존 장악력이 한층 강화됩니다.'}
+=======
+                      평균 신장이 <strong>{Math.abs(heightDelta)}cm</strong> {isSmallBall ? '감소하여 볼 전환 속도와 외곽 공간 창출이 유리해지나, 골밑 리바운드 박스아웃에 집중해야 합니다.' : '증가하여 림 프로텍션과 골밑 페인트존 장악력이 한층 강화됩니다.'}
+>>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
                     </span>
                   </div>
                 );
               })()}
 
               {onAnalyzeMatchup && (
+<<<<<<< HEAD
                 <div className="lineup-chart-actions">
+=======
+                <div style={{ marginTop: '12px' }}>
+>>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
                   <button
                     type="button"
                     className="btn-matchup-cta-full"
@@ -1036,6 +1057,27 @@ export default function BasketballCourtTactics({
                           </span>
                         )}
                         {isHeightClosest && (
+<<<<<<< HEAD
+=======
+                          <span
+                            style={{
+                              fontSize: '0.68rem',
+                              fontWeight: 800,
+                              color: '#0284c7',
+                              background: '#e0f2fe',
+                              border: '1px solid #bae6fd',
+                              padding: '1px 6px',
+                              borderRadius: '4px',
+                              marginRight: '2px',
+                              whiteSpace: 'nowrap'
+                            }}
+                            title={`기존 결장 선수(${targetPlayer?.name})와 신장 차이가 가장 적음 (${Math.abs(fitAnalysis.diffCm)}cm 차이)`}
+                          >
+                            🎯 신장 최단차
+                          </span>
+                        )}
+                        {candCluster && (
+>>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
                           <span
                             style={{
                               fontSize: '0.68rem',

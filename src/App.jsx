@@ -270,6 +270,17 @@ export default function App() {
                           }} title={`공식 신장: ${getHeightDisplay(targetPlayer)}`}>
                             📏 신장: {getHeightDisplay(targetPlayer)}
                           </span>
+                          <span className="tag-pill height" style={{
+                            background: '#eff6ff',
+                            color: '#1d4ed8',
+                            border: '1px solid #bfdbfe',
+                            fontWeight: 800,
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '3px'
+                          }} title={`공식 신장: ${getHeightDisplay(targetPlayer)}`}>
+                            📏 신장: {getHeightDisplay(targetPlayer)}
+                          </span>
                         </div>
                       </div>
                     </div>

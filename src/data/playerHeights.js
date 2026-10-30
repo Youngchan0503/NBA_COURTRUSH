@@ -640,11 +640,19 @@ export const RAW_PLAYER_HEIGHTS = {
 // 선수 이름 정규화 검색 헬퍼
 export function getPlayerHeight(playerName, position = 'SF') {
   if (!playerName) return DEFAULT_HEIGHT_BY_POS[position] || DEFAULT_HEIGHT_BY_POS.SF;
+<<<<<<< HEAD
 
   if (RAW_PLAYER_HEIGHTS[playerName]) {
     return RAW_PLAYER_HEIGHTS[playerName];
   }
 
+=======
+  
+  if (RAW_PLAYER_HEIGHTS[playerName]) {
+    return RAW_PLAYER_HEIGHTS[playerName];
+  }
+  
+>>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
   // 악센트/특수문자 제거 후 재시도 (예: Dončić -> Doncic)
   const normalized = playerName
     .normalize("NFD")

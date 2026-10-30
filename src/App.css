@@ -5315,7 +5315,11 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   color: #fff;
   border: 1px solid #6366f1;
   border-radius: 9px;
+<<<<<<< HEAD
   font-size: 0.9rem;
+=======
+  font-size: 0.78rem;
+>>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
   font-weight: 750;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -5380,6 +5384,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   font-weight: 750;
 }
 
+<<<<<<< HEAD
 .route-zone-legend {
   display: inline-flex;
   align-items: center;
@@ -5397,6 +5402,8 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   background: linear-gradient(90deg, rgba(14, 165, 233, 0.35), rgba(16, 185, 129, 0.35), rgba(245, 158, 11, 0.35));
 }
 
+=======
+>>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
 /* AI Standby State & Empty State High-Impact Styling */
 .is-court-standby .strategy-court-svg {
   filter: saturate(0.85);
@@ -5504,10 +5511,13 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 
 /* 2. Dribble / Screen / Cut Tactical Arrow Drawing (실시간 드로잉) */
+<<<<<<< HEAD
 .court-tactics-routes-layer {
   opacity: 0.68;
 }
 
+=======
+>>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
 .tactical-route-draw {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -5522,13 +5532,22 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 
 /* 3. Pass Marching Ants / Flowing Dots (패스 점선 흐름 효과) */
 .tactical-route-pass {
+<<<<<<< HEAD
   stroke-dasharray: 4 6;
   animation: passFlowLoop 1.4s linear infinite;
+=======
+  stroke-dasharray: 8 8;
+  animation: passFlowLoop 1.2s linear infinite, drawTacticalRoute 0.8s ease-out forwards;
+>>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
 }
 
 @keyframes passFlowLoop {
   to {
+<<<<<<< HEAD
     stroke-dashoffset: -20;
+=======
+    stroke-dashoffset: -32;
+>>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
   }
 }
 
