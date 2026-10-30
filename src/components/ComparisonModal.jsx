@@ -503,11 +503,7 @@ export default function ComparisonModal({ target, candidate, allPlayers = [], on
             const knnRes = calculateKNNDistance(target, activeCandidate);
             const sameSalaryYear = target.salaryYear && target.salaryYear === activeCandidate.salaryYear;
             const salDiff = (sameSalaryYear && target.salaryNum && activeCandidate.salaryNum)
-<<<<<<< HEAD
               ? target.salaryNum - activeCandidate.salaryNum
-=======
-              ? target.salaryNum - activeCandidate.salaryNum 
->>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
               : null;
             const fit = getPhysicalFitAnalysis(target, activeCandidate);
             const tH = target.height_cm || 198;
@@ -597,11 +593,7 @@ export default function ComparisonModal({ target, candidate, allPlayers = [], on
                         {fit.badge}
                       </span>
                     </div>
-<<<<<<< HEAD
 
-=======
-                    
->>>>>>> 46595fb00c4fecc51c68356bbc1953ad51eac4c7
                     {/* 신장 바 비교 시각화 */}
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', margin: '4px 0' }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.68rem' }}>
