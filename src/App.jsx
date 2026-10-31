@@ -361,8 +361,35 @@ export default function App() {
 
       {/* 푸터 */}
       <footer className="footer">
-        <div>
-          <strong>COURT RUSH</strong> — NBA Player Similarity & Replacement Recommendation System
+        <div className="footer-container">
+          <div className="footer-brand">
+            <strong>COURT RUSH</strong> — NBA Player Similarity & Replacement Recommendation System
+          </div>
+
+          <div className="footer-notice-box">
+            <p className="footer-legal-desc">
+              본 서비스는 교육 및 비상업적 연구·포트폴리오 시연 목적으로 제작된 웹 애플리케이션입니다.
+            </p>
+            
+            <div className="footer-meta-grid">
+              <div className="footer-meta-item">
+                <span className="meta-label">데이터셋 출처</span>
+                <span className="meta-text">Per 36 Minutes.csv (Basketball-Reference 관련 데이터) · nba_salary.csv (GitHub LeeChien-Huang/NBA-Player-Value-Analysis 보완) · teamStandings2026.js (팀 순위·승패·기본정보)</span>
+              </div>
+              <div className="footer-meta-item">
+                <span className="meta-label">미디어 리소스</span>
+                <span className="meta-text">선수 프로필 사진(NBA CDN) 및 구단 로고(ESPN CDN)는 식별 및 교육용 인용 목적으로 사용되며, 모든 이미지 저작권 및 상표권은 NBA 및 각 구단에 있습니다.</span>
+              </div>
+              <div className="footer-meta-item">
+                <span className="meta-label">기술 및 인공지능</span>
+                <span className="meta-text">Python (pandas, NumPy, scikit-learn K-Means & KNN) · React & Vite · OpenAI Responses API & Google Gemini API</span>
+              </div>
+            </div>
+
+            <div className="footer-copyright-line">
+              <span>© 2026 COURT RUSH. All player data and statistics are used strictly under fair use for educational analysis.</span>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
